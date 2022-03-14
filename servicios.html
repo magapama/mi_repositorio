@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros de Velasquez</title>
+    <link rel="stylesheet" href="css/style4.css">
+</head>
+<body>      
+    <div class="contenedorServ">   
+        <div class="encabezadoPpal" id="nav">
+            <nav class="textRight">
+                <div class="textLeft">
+                    <a href="index.html"><img src="imagenes/letra V.jpg" width="100px" height="100px" alt="Logo Libros de Velasquez"> </a>
+                </div>
+                <h1 class="textNegrita textCenter">Servicios</h1>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="./quines-somos.html">Quiénes somos</a></li>
+                    <li><a href="./categoria.html">Categoría</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>        
+            </nav>
+        </div>
+    </div>
+    
+        <div class="scale seccionTabla" id="tabla">
+            <h2 class="textCenter">Tienda online de libros de segunda mano. "Cambiemos la cultura de consumo y seamos responsables de la huella que dejamos en el planeta".</h2>
+            <h3 class="textCenter">Lista de precios</h3>
+<!--inicia tabla-->
+            <table class="border" border="2px" cellpading="5px" cellspacing="5px"> 
+                <tr>
+                    <th>Género</th>
+                    <th>Precio ($ Cl)</th>
+                    <th>Stock</th>
+                </tr>
+                <tr>
+                  <td>Autoayuda y Superación personal</td>
+                  <td>$ 10.000 </td>
+                  <td>10</td>
+                </tr>
+                <td>Astrología y Ciencias ocultas</td>
+                  <td>$ 12.000 </td>
+                  <td>08</td>
+                <tr>
+                    <td>Literatura Clásica</td>
+                    <td>$ 18.000 </td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Literatura Infantil</td>
+                    <td>$ 15.000 </td>
+                    <td>25</td>
+                </tr>  
+            </table>
+        </div>
+<!--ends tabla-->
+        <section class="seccionForm" id="form" >
+            <h2 class="textCenter">Regístrate rellenando nuestro formulario y disfruta de la compra y promociones de nuestros libros</h2>
+        <!--inicia form-->
+            <div >
+                <form action="basedatos.php" method="post"> 
+                    <fieldset >
+                        <legend><h3>Datos de la Cuenta</h3></legend>
+                        <li><label for="email">Email:</label></li>
+                        <input size="70" type="email" placeholder=" Ej:mariapadilla@hotmail.com" name="email" id="email">
+                        <li><label for="repeatemail">Repetir Email:</label></li>
+                        <input size="70" type="email" name="repeatemail" id="repeatemail" placeholder=" Ej:mariapadilla@hotmail.com" name="repeatemail" itemid="repeatemail">
+                        <li><label for="passw">Contraseña:</label></li>
+                        <input size="70" type="email" name="passw" id="passw">
+                    </fieldset>
+                    <fieldset>
+                        <legend> <h3>Datos Personales</h3></legend>
+                        <li><label for="rut">Rut:</label></li>
+                        <input size="50" type="text" placeholder=" Ej: 12.345.678-9" name="rut" id="rut">
+                        <li><label for="nombre">Nombre y Apellido:</label></li>
+                        <input size="70" type="text" placeholder=" Ej: María Padilla" name="nombre" id="nombre">
+                        <li><label for="telefono">Teléfono:</label></li>
+                        <input size="50" type="text" placeholder=" Ej: +56-9-12345678" name="telefono" id="telefono">
+                    </fieldset>
+                    <fieldset>
+                        <legend><h3>Información de la Compra</h3></legend>
+                            <h3>Autoayuda y Superación personal</h3>
+                                <input type="checkbox" value="Buenos días, alegría: cómo superar la tristeza y alcanzar el equilibrio emocional" name="Buenos días, alegría: cómo superar la tristeza y alcanzar el equilibrio emocional" id="Buenos días, alegría: cómo superar la tristeza y alcanzar el equilibrio emocional">
+                                <label for="Buenos días, alegría: cómo superar la tristeza y alcanzar el equilibrio emocional">Buenos días, alegría: cómo superar la tristeza y alcanzar el equilibrio emocional</label>
+                                <br>
+                                <input type="checkbox" value="Inteligencia emocional 2.0" name="Inteligencia emocional 2.0" id="Inteligencia emocional 2.0">
+                                <label for="Inteligencia emocional 2.0">Inteligencia emocional 2.0</label>
+                                <br>
+                                <input type="checkbox" value= name="Tus zonas erróneas" id="Tus zonas erróneas">
+                                <label for="Tus zonas erróneas">Tus zonas erróneas</label>
+                            <h3>Astrología y Ciencias ocultas</h3>
+                                <input type="checkbox" value="Tarot y Astrología" name="Tarot y Astrología" id="Tarot y Astrología">
+                                <label for="Tarot y Astrología">Tarot y Astrología</label>
+                                <br>
+                                <input type="checkbox" value="Astrología práctica: Utiliza la sabiduría de las estrellas en tu vida diaria" name="Astrología práctica: Utiliza la sabiduría de las estrellas en tu vida diaria" id="Astrología práctica: Utiliza la sabiduría de las estrellas en tu vida diaria">
+                                <label for="Astrología práctica: Utiliza la sabiduría de las estrellas en tu vida diaria">Astrología práctica: Utiliza la sabiduría de las estrellas en tu vida diaria</label>
+                                <br>
+                                <input type="checkbox" value= name="Tu guía del Zodiaco" id="Tu guía del Zodiaco">
+                                <label for="Tu guía del Zodiaco">Tu guía del Zodiaco</label>
+                            <h3>Literatura Clásica</h3>
+                                <input type="checkbox" value="Cien años de soledad" name="Cien años de soledad" id="Cien años de soledad">
+                                <label for="Cien años de soledad">Cien años de soledad</label>
+                                <br>
+                                <input type="checkbox" value="Romeo y Julieta" name="Romeo y Julieta" id="Romeo y Julieta">
+                                <label for="Romeo y Julieta">Romeo y Julieta</label>
+                                <br>
+                                <input type="checkbox" value= name="Cumbres Borrascosas" id="Cumbres Borrascosas">
+                                <label for="Cumbres Borrascosas">Cumbres Borrascosas</label> 
+                            <h3>Literatura Infantil</h3>
+                                <input type="checkbox" value="El principito" name="El principito" id="El principito">
+                                <label for="El principito">El principito</label>
+                                <br>
+                                <input type="checkbox" value="Harry Potter" name="Harry Potter" id="Harry Potter">
+                                <label for="Harry Potter">Harry Potter</label>
+                                <br>
+                                <input type="checkbox" value= name="Alicia en el País de las Maravillas" id="Alicia en el País de las Maravillas">
+                                <label for="Alicia en el País de las Maravillas">Alicia en el País de las Maravillas</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend><h3>Información de la compra</h3></legend>
+                            <label for="tienda">Retiro en Tienda</label>
+                            <input type="radio" value="tienda "name="envio" id="tienda">
+                            <label for="domicilio">Envío a Domicilio</label>
+                            <input type="radio" value="domicilio "name="envio" id="domicilio">                
+                            <select name="localidad" id="localidad">Localidad
+                                <option value="amds">Área Metropolitana de Santiago</option>
+                                <option value="provincia">Provincias</option>
+                                <option value="interior">Regiones de Chile</option>
+                            </select>                                             
+                    </fieldset>
+                    <h3><label for="mensaje">Dejanos tu comentario</label></h3>
+                    <br>
+                        <textarea rows="20" cols="70" name="comentario" id="comentario" cols="120" rows="10"placeholder="Escribe tu mensaje"></textarea>
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Cancelar">                   
+                </form>
+                <!--ends form-->
+            </div>
+        </section>
+    
+    <footer class="pie" id="footer">
+        <h3 class=" pie pie__titulo--md">Síguenos en nuestras Redes Sociales</h3>
+        <div>
+            <a href="https://Facebook.com" target="_blank"><img src="imagenes/fb_icon_325x325.png" width="40px" height="40px" alt="Facebook"></a>
+        </div> 
+        <div>
+            <a href="https://Twitter.com" target="_blank"><img src="imagenes/twitterlogodown.png" width="40px" height="40px" alt="Twitter"></a>
+        </div>
+        <div>
+            <a href="https://instagram.com" target="_blank"><img src="imagenes/IG.png" width="40px" height="40px" alt="Instagram"></a>
+        </div>
+        <div>
+            <a href="https://whatsapp.com" target="_blank"><img src="imagenes/WhatApp.jpg" width="40px" height="40px" alt="Whatsapp"></a>
+        </div>
+   </footer>
+    </div>
+</body>
+</html>
